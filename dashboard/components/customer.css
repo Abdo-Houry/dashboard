@@ -1,0 +1,130 @@
+/* design table */
+.table-wraper {
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td,
+.fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 15px;
+}
+
+.fl-table thead th {
+    color: #000;
+    background: #eee;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #3478bd;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #3eb597;
+}
+
+/* data clint all */
+.content-clint {
+    margin-top: 20px;
+}
+
+.preliminary-data,
+.second-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.second-data {
+    margin-top: 30px;
+}
+
+.card-email,
+.card-phon,
+.card-address {
+    width: 200px;
+    text-align: start;
+}
+
+.preliminary-data div h3 {
+    position: relative;
+}
+
+.preliminary-data div h3::before {
+    content: "";
+    height: 100%;
+    width: 3px;
+    left: -6px;
+    top: 0px;
+    background-color: #3eb597;
+    position: absolute;
+}
+
+.card-status,
+.card-order-count,
+.card-zip {
+    width: 200px;
+    text-align: start;
+    display: flex;
+    gap: 15px;
+}
+
+.second-data div h3 {
+    position: relative;
+}
+
+.second-data div h3::before {
+    content: "";
+    height: 100%;
+    width: 3px;
+    left: -6px;
+    top: 0px;
+    background-color: #3eb597;
+    position: absolute;
+}
+
+.mt {
+    margin-top: 30px;
+}
+
+.btn-view {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-view:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+}
